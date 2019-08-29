@@ -71,10 +71,7 @@ const App: React.FC = () => {
             <div
               className="down"
               onClick={() => {
-                setDownload(pre => {
-                  URL.revokeObjectURL(pre);
-                  return '';
-                });
+                setDownload('');
               }}
             >
               <Icon type="download" />
